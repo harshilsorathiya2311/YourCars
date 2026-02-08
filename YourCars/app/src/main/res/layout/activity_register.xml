@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbackground"
+    tools:context=".auth.RegisterActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="40dp"
+        android:layout_marginBottom="-20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp"
+            >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:layout_gravity="center"
+                android:textColor="@color/my_primary"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:alpha="0.7"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/registeremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:textStyle="bold"
+                android:alpha="0.7"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/registerContactnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_call"
+                android:inputType="number"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textStyle="bold"
+                android:alpha="0.7"/>
+
+            <EditText
+                android:id="@+id/registerpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_visibility_off"
+                android:inputType="textPassword"
+                android:paddingEnd="16dp"
+                android:drawablePadding="10dp"
+                tools:ignore="Autofill,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:inputType="textEmailAddress"
+                android:text="ConfirmPassword"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/registerconfirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_visibility_off"
+                android:inputType="textPassword"
+                android:paddingEnd="16dp"
+                android:drawablePadding="10dp"
+                tools:ignore="Autofill,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Register"
+                android:id="@+id/registerButton" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                />
+
+
+            <TextView
+                android:id="@+id/registerRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alredy an user? login"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center"
+
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
